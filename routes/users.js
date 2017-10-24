@@ -3,7 +3,7 @@ const router = express.Router();
 const users = require('../assets/users.json');
 
 router.get('/', (req, res, next) => {
-	console.log('hi user', users);
+	console.log('hi user', users[0]);
 	res.send('Users page');
 });
 
